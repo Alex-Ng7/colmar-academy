@@ -146,6 +146,11 @@ header .mobile-logo{
   /*padding-top: 1.77rem;*/
   border-left: 2px solid #D7D7D7;
 }
+
+.information-mobile{
+  display: none;
+}
+
  /*this side information works for both thesis and the practicing side boxes*/
  .side-information .text-box{
   display: inline-block;
