@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <title>Colmar Academy</title> <!--https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-2/colmar-academy-spec.png-->
@@ -15,17 +16,24 @@
           <nav>
             <span>On Campus</span>
             <span>Online</span>
-            <span>or companies</span>
+            <span>For companies</span>
             <span>Sign in</span>
           </nav>
         </div>
       </div>
+      <div class="mobile-logo">
+        <img src="./resources/images/ic-logo.svg" alt="ic-logo">
+        <img src="./resources/images/ic-on-campus.svg" alt="on-campus">
+        <img src="./resources/images/ic-online.svg" alt="online">
+        <img src="./resources/images/ic-login.svg" alt="login">
+      </div>
     </header>
     <div class="container">
+      <div class="mobile-spacing"> <!--putting that grey box for spacing on the mobile version-->
+      </div>
       <div class="banner">
         <div class="studying">
-          <img src="http://i.imgur.com/36fVvSq.jpg" alt="banner">
-          <!--<img src="./resources/images/banner.jpg" alt="banner">-->
+          <img src="./resources/images/banner.jpg" alt="banner">
         </div>
         <div class="text-content">
           <h2>Learn something new everyday</h2>
@@ -50,7 +58,6 @@
                 <h3>Tue 10/11 &amp; Wed 10/12: 8am-3pm</h3>
                 <h4>Read more</h4>
               </div>
-
             </div>
             <div class="side-box">
               <img src="./resources/images/information-campus.jpg" alt="campus">
@@ -70,6 +77,32 @@
             </div>
           </div>
       </div>
+        <div class="information-mobile">
+          <div class="information-box">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="orientation-mobile">
+            <div class="text-box">
+              <h2>Orientation date</h2>
+              <h3>Tue 10/11 &amp; Wed 10/12: 8am-3pm</h3>
+              <h4>Read more</h4>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="campus-mobile">
+            <div class="text-box">
+              <h2>Our Campus</h2>
+              <h3>Find which campus is close by you</h3>
+              <h4>Read more</h4>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest-lecture-mobile">
+            <div class="text-box">
+              <h2>Our guest lecture</h2>
+              <h3>Join a keynote with Oliver Sack about music in medical treatment</h3>
+              <h4>Read more</h4>
+            </div>
+          </div>
+        </div>
       </div>
     <div class="container">
       <div class="learning">
@@ -126,5 +159,40 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <h1 id="thesis-title">Thesis exhibit</h1>
+        <div class="thesis">
+          <div class="video-box">
+            <video controls loop>
+              <source src="./resources/videos/thesis.mp4" poster="posterimage.jpg">
+            </video>
+            <div class="text-box">
+              <h3>Reimagine urban</h3>
+              <h4>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
+            </div>
+          </div>
+          <div class="side-information">
+            <div class="side-box">
+              <img src="./resources/images/thesis-fisma.jpg" alt="fisma">
+              <div class="text-box">
+                <h2>Fisma: Design and</h2>
+                <h3>Designer showcase of new prototype and product</h3>
+              </div>
+            </div>
+            <div class="side-box">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="now-and-then">
+              <div class="text-box">
+                <h2>Now and Then</h2>
+                <h3>Research study about New York</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+      <h4>&copy;2017 Colmar Academy. All rights reserved.</h4>
+      <span>Terms</span>
+      <span>Privacy</span>
+    </footer>
   </body>
 </html>
