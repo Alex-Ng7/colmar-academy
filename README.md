@@ -1,2 +1,3 @@
 # colmar-academy
-capstone Codecademy Ready
+capstone for Codecademy Ready
+https://alex-ng7.github.io/colmar-academy/index.html
