@@ -323,7 +323,11 @@ footer span{
 @media only screen and (min-width:320px) and (max-width:426px){
 
 .container{
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 header .logo .container{
@@ -337,13 +341,8 @@ header .mobile-logo{
     height: 3.55rem;
 }
 
-.studying{
-  display: none;
-}
-.mobile-spacing{
-  display: block;
-  background-color: #a7a5a5;
-  height: 10rem;
+.banner .studying{
+  padding: 0;
 }
 
 .banner{
@@ -386,16 +385,46 @@ header .mobile-logo{
   padding-top: 1.55rem;
 }
 
-.informatin-mobile .information-box .text-box h4:nth-last-child(2){
+.information-mobile .information-box:last-child{
+  padding-bottom: 1.55rem;
+}
+
+.information-mobile .information-box .text-box h4:nth-last-child(2){
   padding-bottom: 2rem;
 }
 
 .information-mobile .information-box img{
   width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+.information-box .text-box{
+  text-align: left;
+  padding-left: 1.66rem;
+}
+
+.information-box .text-box h2{
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: .77rem;
+}
+
+.information-box .text-box h3{
+  font-size: .88rem;
+  font-weight: 500;
+  padding-top: .5rem;
+}
+
+.information-box .text-box h4{
+  font-size: .77rem;
+  color: #4693c3;
+  padding-top: .5rem;
+}
+
+.learning-boxes{
+    display: none;
+}
+
+.
 
 .thesis{
   padding-left: 0;
