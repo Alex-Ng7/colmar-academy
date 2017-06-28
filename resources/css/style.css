@@ -346,10 +346,14 @@ header .mobile-logo{
   height: 10rem;
 }
 
+.banner{
+  display: block;
+  text-align:center;
+}
+
 .banner .text-content {
   line-height: 1.5rem;
-  padding-left: 1rem;
-  padding-bottom: 1.77rem;
+  padding: 1.77rem 0;
 }
 
 .banner .text-content h2{
@@ -371,6 +375,26 @@ header .mobile-logo{
 
 .information-main{
   display: none;
+}
+
+.information-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.information-mobile .information-box{
+  padding-top: 1.55rem;
+}
+
+.informatin-mobile .information-box .text-box h4:nth-last-child(2){
+  padding-bottom: 2rem;
+}
+
+.information-mobile .information-box img{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .thesis{
