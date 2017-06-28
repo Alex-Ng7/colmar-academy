@@ -420,13 +420,50 @@ header .mobile-logo{
   padding-top: .5rem;
 }
 
+.learning{
+  width: 100%;
+}
+
 .learning-boxes{
-    display: none;
+  display: none;
 }
 
-.
+.mobile-boxes .mobile-box{
+  padding-bottom: .66rem;
+  width: 90%;
+  margin: 0 auto;
+}
 
-.thesis{
+.mobile-boxes .mobile-box h3{
+  background-color: rgba(129, 123, 123, 0.54);
+  text-align: left;
+  padding: 1rem;
+}
+
+.thesis,
+#thesis-title{
   padding-left: 0;
+  display: none;
 }
+
+.mobile-thesis h2{
+  padding: 1.77rem 0;
+}
+
+.mobile-thesis video{
+  width: 100%;
+}
+
+footer{
+  border-top: 0px;
+}
+
+footer span{
+  display: none;
+}
+
+footer h4{
+  padding-top: 1.77rem;
+}
+
 }
