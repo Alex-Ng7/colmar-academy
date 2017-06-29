@@ -396,8 +396,19 @@ header .logo .container{
 header .mobile-logo{
     display: flex;
     justify-content: space-between;
-    padding: 0rem 1.5rem;
-    height: 3.55rem;
+    padding: 1.5rem 1.5rem;
+}
+
+/*mobile nav button animations*/
+header .mobile-logo img{
+  opacity: 1;
+  transition: all 500ms ease-in;
+  border-bottom: 0px;
+}
+
+header .mobile-logo img:hover{
+  opacity: .8;
+  box-shadow: 3px 3px 4px 1px rgba(105,0,0,1);
 }
 
 .banner .studying{
