@@ -10,6 +10,19 @@ h2{
   font-weight: 800;
 }
 
+button{
+  border: none;
+  color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: .3rem;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  border-radius: 1rem;
+}
+
 .container{
   max-width: 53.33rem;
   margin: 0 auto;
@@ -23,6 +36,7 @@ header .container{
 header span{
   padding: .88rem 0;
   font-size: 1.23rem;
+  margin-top: .3rem
 }
 
 header #colmar{
@@ -37,7 +51,7 @@ header #academy{
 header .logo img{
   height: 3rem;
   padding-left: 1.3rem;
-
+  header-top: .3rem;
 }
 
 header nav{
@@ -46,9 +60,17 @@ header nav{
   padding-top: .88rem;
 }
 
-header nav span{
-  padding-right: .88rem;
-  font-size: 1rem;
+header nav button{
+  padding: .44rem;
+  color: #504949;
+  background-color: white;
+}
+
+header nav button:hover{
+  background: rgba(0,0,0,0);
+	color: #690000;
+	box-shadow: inset 0 0 0 3px #690000;
+  border-radius: 0.3rem;
 }
 
 header .mobile-logo{
@@ -91,19 +113,16 @@ header .mobile-logo{
   margin-bottom: 3rem;
 }
 
-.banner .text-content span{
-  background-color: #403d3d;
-  color: #D7D7D7;
-  text-align: center;
+.banner .text-content button{
+	background: #690000;
   padding: .6rem 6rem;
-  transition: all 500ms ease-in-out;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
-.banner .text-content span:hover{
-  background-color: #7A5054;
-  color: #2C0B0E;
-  padding: 1rem 6.2rem;
+.banner .text-content button:hover{
+  background: rgba(0,0,0,0);
+	color: #690000;
+	box-shadow: inset 0 0 0 3px #690000;
 }
 
 .information-main{
@@ -172,9 +191,33 @@ header .mobile-logo{
   padding-bottom: .5rem;
 }
 
- .side-information h4{
-    font-size: .66rem;
-    color: #4693c3;
+.side-information button:after {
+	top: -100%;
+	left: 0px;
+	width: 8rem;
+	position: absolute;
+	background: #690000;
+  color: white;
+	content: 'It\'\s good for you :)';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+  padding: .6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+}
+
+.side-information button{
+   font-size: .66rem;
+   color: #690000;
+   padding: .6rem;
+   width: 8rem;
+   background: white;
+   border: 1px #690000 solid;
+}
+
+.side-information button:hover{
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
 }
 
  .side-information img{
@@ -219,6 +262,14 @@ header .mobile-logo{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+.learning-boxes .box{
+  transition: box-shadow 250ms ease;
+}
+
+.learning-boxes .box:hover{
+  box-shadow: -12px -8px 5px 0px rgba(0,0,0,0.20);
 }
 
 .box{
@@ -406,8 +457,8 @@ header .mobile-logo{
 }
 
 .information-box .text-box{
-  text-align: left;
-  padding-left: 1.66rem;
+  text-align: center;
+  display: block;
 }
 
 .information-box .text-box h2{
@@ -419,13 +470,36 @@ header .mobile-logo{
 .information-box .text-box h3{
   font-size: .88rem;
   font-weight: 500;
-  padding-top: .5rem;
+  padding: .5rem 0;
 }
 
-.information-box .text-box h4{
-  font-size: .77rem;
-  color: #4693c3;
-  padding-top: .5rem;
+.information-box .text-box button:after {
+	top: -100%;
+	left: 0px;
+	width: 8rem;
+	position: absolute;
+	background: #690000;
+  color: white;
+	content: 'It\'\s good for you :)';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+  padding: .6rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+}
+
+.information-box .text-box button{
+   font-size: .66rem;
+   color: #690000;
+   padding: .6rem;
+   width: 8rem;
+   background: white;
+   border: 3px #690000 solid;
+}
+
+.information-box .text-box button:focus{
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
 }
 
 .learning{
@@ -450,6 +524,14 @@ header .mobile-logo{
   background-color: rgba(129, 123, 123, 0.54);
   text-align: left;
   padding: 1rem;
+}
+
+.mobile-boxes .mobile-box ul{
+  display: none;
+}
+
+.mobile-boxes .mobile-box ul:target{
+  display: block;
 }
 
 .thesis,
