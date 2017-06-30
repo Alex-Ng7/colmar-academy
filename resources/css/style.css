@@ -1,3 +1,6 @@
+
+/*$red: #690000;*/
+
 html,
 body{
     font-size: 18px;
@@ -45,7 +48,7 @@ header #colmar{
 }
 
 header #academy{
-  color: #9C9C9C;
+  color: #690000;
 }
 
 header .logo img{
@@ -399,17 +402,19 @@ header .mobile-logo{
     padding: 1.5rem 1.5rem;
 }
 
-/*mobile nav button animations*/
-header .mobile-logo img{
-  opacity: 1;
-  transition: all 500ms ease-in;
-  border-bottom: 0px;
+header .mobile-logo img:nth-child(1n+2){
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: all 0.3s;
+  border-bottom: 2px solid #690000;
 }
 
-header .mobile-logo img:hover{
-  opacity: .8;
-  box-shadow: 3px 3px 4px 1px rgba(105,0,0,1);
-}
+header .mobile-logo img:hover:nth-child(1n+2){
+  transform: translateY(-10px);
+  border-bottom: 5px solid #690000;
+  }
 
 .banner .studying{
   padding: 0;
@@ -538,10 +543,19 @@ header .mobile-logo img:hover{
 }
 
 .mobile-boxes .mobile-box ul{
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.mobile-boxes .course-info {
+  height: 100%;
   display: none;
 }
 
-.mobile-boxes .mobile-box ul:target{
+.mobile-boxes .mobile-box .mobile-box:hover .course-info{
   display: block;
 }
 
