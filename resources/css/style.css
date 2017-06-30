@@ -534,28 +534,28 @@ header .mobile-logo img:hover:nth-child(1n+2){
   padding-bottom: .66rem;
   width: 90%;
   margin: 0 auto;
+
 }
 
-.mobile-boxes .mobile-box h3{
+.mobile-boxes .mobile-box button{
   background-color: rgba(129, 123, 123, 0.54);
-  text-align: left;
   padding: 1rem;
+  width: 90%;
 }
 
-.mobile-boxes .mobile-box ul{
+.mobile-boxes .mobile-box .course-info ul{
   background-color: #f9f9f9;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
-}
-
-.mobile-boxes .course-info {
+  border-radius: 1rem;
+  width: 90%;
   height: 100%;
   display: none;
 }
 
-.mobile-boxes .mobile-box .mobile-box:hover .course-info{
+/*why doesn't this work?*/
+.mobile-boxes .mobile-box button:hover .mobile-boxes .course-info ul{
   display: block;
 }
 
