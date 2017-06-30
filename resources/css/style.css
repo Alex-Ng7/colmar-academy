@@ -543,20 +543,38 @@ header .mobile-logo img:hover:nth-child(1n+2){
   width: 90%;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes grow{
+  from {height: 0;}
+  to   {height: 50%;}
+}
+
 .mobile-boxes .mobile-box .course-info ul{
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
   border-radius: 1rem;
-  width: 90%;
-  height: 100%;
   display: none;
 }
 
 /*why doesn't this work?*/
-.mobile-boxes .mobile-box button:hover .mobile-boxes .course-info ul{
+.mobile-boxes .mobile-box button:hover{
+  color: #690000;
+  background: rgba(0,0,0,0);
+  border: 3px #690000 solid;
+}
+
+.mobile-boxes .mobile-box button:hover + .course-info ul{
   display: block;
+  border: 3px rgba(129, 123, 123, 0.54) dotted;
+  height: 100%;
+  animation: fadeIn 1s,
+              grow 1s;
 }
 
 .thesis,
