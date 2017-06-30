@@ -569,7 +569,7 @@ header .mobile-logo img:hover:nth-child(1n+2){
   border: 3px #690000 solid;
 }
 
-.mobile-boxes .mobile-box button:hover + .course-info ul{
+.mobile-boxes .mobile-box button:focus + .course-info ul{
   display: block;
   border: 3px rgba(129, 123, 123, 0.54) dotted;
   height: 100%;
